@@ -6,11 +6,11 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/15 21:00:11 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/05/15 22:11:19 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/05/15 23:22:42 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libftprintf.h"
+#include "../ft_printf.h"
 
 u_int16_t	uint_len(u_int32_t nbr)
 {
@@ -27,10 +27,10 @@ u_int16_t	uint_len(u_int32_t nbr)
 	return (len);
 }
 
-char		*ft_uitoa(u_int32_t nbr)
+char	*ft_uitoa(u_int32_t nbr)
 {
 	char		*ui;
-	u_int16_t len;
+	u_int16_t	len;
 
 	len = uint_len(nbr);
 	ui = (char *)malloc(sizeof(char) * len + 1);
@@ -53,5 +53,6 @@ u_int16_t	ft_print_uint(u_int32_t nbr)
 	len = 0;
 	ui = ft_uitoa(nbr);
 	len = ft_print_str(ui);
+	free(ui);
 	return (len);
 }

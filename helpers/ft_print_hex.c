@@ -1,24 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_int.c                                     :+:      :+:    :+:   */
+/*   ft_print_hex.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/15 20:55:59 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/05/15 23:23:00 by arabelo-         ###   ########.fr       */
+/*   Created: 2023/05/17 18:48:27 by arabelo-          #+#    #+#             */
+/*   Updated: 2023/05/17 18:57:57 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
 
-u_int16_t	ft_print_int(int nbr)
+u_int8_t	ft_print_hex(u_int32_t hex, char c)
 {
-	u_int16_t	len;
 	char		*n;
+	u_int8_t	len;
 
-	n = ft_itoa(nbr);
+	if (!hex)
+		return (ft_print_str("(nil)"));
+	n = ft_uitoa(hex);
+	len = ft_print_str("0x");
 	len = ft_print_str(n);
-	free(n);
-	return (len);
 }

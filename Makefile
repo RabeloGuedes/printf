@@ -35,7 +35,7 @@ $(OBJ_FILES): $(SRC) $(HELPERS)
 
 clean:
 	@make -s clean --directory=$(LIBFT)
-	@rm -r $(OBJ_FILES)
+	@rm -f $(OBJ_FILES)
 	@echo "$(RED) OBJ_FILES removed!"
 
 fclean: clean
