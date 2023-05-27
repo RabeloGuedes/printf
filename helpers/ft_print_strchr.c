@@ -6,7 +6,7 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/15 20:45:41 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/05/17 12:10:30 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/05/27 12:32:10 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,7 @@ u_int64_t	ft_print_str(char *s)
 
 	len = 0;
 	if (!s)
-	{
-		ft_print_str("(null)");
-		return (6);
-	}
+		return (ft_print_str("(null)"));
 	while (s[len])
 		ft_print_char(s[len++]);
 	return (len);

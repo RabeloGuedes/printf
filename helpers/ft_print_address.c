@@ -6,7 +6,7 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/15 21:20:28 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/05/17 19:34:24 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/05/27 13:08:32 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,23 +18,16 @@ u_int16_t	ft_print_address(u_int64_t address)
 
 	len = 0;
 	if (!address)
+		return (ft_print_str("(nil)"));
+	if (address > 15)
 	{
-		ft_print_str("(nil)");
-		return (5);
-	}
-	len += ft_print_str("0x");
-	while (address > 16)
-	{
+		len += ft_print_address(address / 16);
 		len += ft_print_char(HEX_TABLE_LOWER[address % 16]);
-		address /= 16;
 	}
-	len += ft_print_char(HEX_TABLE_LOWER[address]);
-	// if (address > 14)
-	// {
-	// 	len += ft_print_address(address / 16);
-	// 	len += ft_print_address(address % 16);
-	// }
-	// 	len += ft_print_str("0x");
-	// 	len += ft_print_char(HEX_TABLE_LOWER[address]);
+	else
+	{
+		len += ft_print_str("0x");
+		len += ft_print_char(HEX_TABLE_LOWER[address % 16]);
+	}
 	return (len);
 }

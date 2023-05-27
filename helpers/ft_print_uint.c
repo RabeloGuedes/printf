@@ -6,7 +6,7 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/15 21:00:11 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/05/15 23:22:42 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/05/27 13:19:22 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,8 @@ char	*ft_uitoa(u_int32_t nbr)
 	if (!ui)
 		return (NULL);
 	ui[len--] = '\0';
+	if (nbr == 0)
+		ui[len] = '0';
 	while (nbr)
 	{
 		ui[len--] = nbr % 10 + 48;
