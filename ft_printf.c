@@ -6,7 +6,7 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 17:15:04 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/05/17 19:18:49 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/05/27 14:34:42 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ int	ft_printf(const char *s, ...)
 	va_start(args, s);
 	i = 0;
 	len = 0;
-
 	while (s[i])
 	{
 		if (s[i] == '%')

@@ -6,7 +6,7 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/15 18:37:23 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/05/27 13:06:50 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/05/27 14:34:47 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,8 @@ u_int64_t	ft_format_checker(int c, va_list args)
 		len = ft_print_int(va_arg(args, int));
 	else if ((char)c == 'u')
 		len = ft_print_uint(va_arg(args, u_int32_t));
-	// else if ((char)c == 'x'|| (char)c == 'X')
-	// 	ft_print_hex(va_arg(args, u_int32_t), c);
+	else if ((char)c == 'x' || (char)c == 'X')
+		len = ft_print_hex(va_arg(args, u_int32_t), c);
 	else if ((char)c == '%')
 		len = ft_print_char('%');
 	return (len);

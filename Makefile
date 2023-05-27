@@ -7,7 +7,7 @@ LIBFT = libft
 
 HELP_PATH = ./helpers
 
-HELPERS = $(HELP_PATH)/ft_print_address.c $(HELP_PATH)/ft_print_uint.c $(HELP_PATH)/ft_print_int.c $(HELP_PATH)/ft_print_strchr.c
+HELPERS = $(HELP_PATH)/ft_print_address.c $(HELP_PATH)/ft_print_uint.c $(HELP_PATH)/ft_print_int.c $(HELP_PATH)/ft_print_strchr.c $(HELP_PATH)/ft_print_hex.c
 
 SRC = ft_printf.c ft_format_checker.c
 
