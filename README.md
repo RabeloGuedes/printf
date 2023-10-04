@@ -61,7 +61,7 @@ Projeto da [42](https://www.42lisboa.com) - Rank 1 - ft_printf
 ## 💬 Contatos
 
 <div align="center" style="display: inline_block">
-  <a href="https://rabeloguedes.github.io" target="_blank">
+  <a href="https://rabeloguedes.com.br" target="_blank">
     <img height="28rem" src="https://img.shields.io/badge/my_portfolio-3fc337?style=for-the-badge" target="_blank">
   </a> 
   <a href="https://www.linkedin.com/in/al%C3%AA-emmanuel-rabelo-guedes/" target="_blank">
@@ -139,7 +139,7 @@ Project from [42](https://www.42lisboa.com/) - Rank 1 - ft_printf
 ## 💬 Contact
 
 <div align="center" style="display: inline_block">
-  <a href="https://rabeloguedes.github.io" target="_blank">
+  <a href="https://rabeloguedes.com.br" target="_blank">
     <img height="28rem" src="https://img.shields.io/badge/my_portfolio-3fc337?style=for-the-badge" target="_blank">
   </a> 
   <a href="https://www.linkedin.com/in/al%C3%AA-emmanuel-rabelo-guedes/" target="_blank">
@@ -214,7 +214,7 @@ Projekt von [42](https://www.42lisboa.com/) - Rank 1 - ft_printf
 ## 💬 Kontakt
 
 <div align="center" style="display: inline_block">
-  <a href="https://rabeloguedes.github.io" target="_blank">
+  <a href="https://rabeloguedes.com.br" target="_blank">
     <img height="28rem" src="https://img.shields.io/badge/my_portfolio-3fc337?style=for-the-badge" target="_blank">
   </a> 
   <a href="https://www.linkedin.com/in/al%C3%AA-emmanuel-rabelo-guedes/" target="_blank">
