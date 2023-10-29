@@ -6,7 +6,7 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 17:15:04 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/05/27 14:34:42 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/10/29 14:11:05 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_printf(const char *s, ...)
 	while (s[i])
 	{
 		if (s[i] == '%')
-			len += ft_format_checker(s[++i], args);
+			len += ft_format_checker(s[++i], &args);
 		else
 			len += ft_print_char(s[i]);
 		i++;

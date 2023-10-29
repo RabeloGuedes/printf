@@ -6,7 +6,7 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 17:15:49 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/05/27 14:34:22 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/10/29 14:11:32 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 # include "./libft/libft.h"
 
 int			ft_printf(const char *s, ...);
-u_int64_t	ft_format_checker(int c, va_list args);
+u_int64_t	ft_format_checker(int c, va_list *args);
 u_int8_t	ft_print_char(char c);
 u_int64_t	ft_print_str(char *s);
 u_int16_t	ft_print_int(int nbr);
